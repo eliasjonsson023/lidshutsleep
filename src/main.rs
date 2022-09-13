@@ -30,7 +30,7 @@ fn main() {
 
 		if my_vec[1] == "closed" {
 			// hibernate if lid is closed
-			std::process::Command::new("echo").arg("closed").status().expect("Failed to suspend");
+			std::process::Command::new("systemctl").arg("suspend").status().expect("Failed to suspend");
 		}
 		thread::sleep(Duration::from_millis(5000));
 	}
