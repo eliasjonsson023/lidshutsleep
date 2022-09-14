@@ -19,10 +19,8 @@ fn main() {
 
 	loop {
 		if b {
-			println!("{:?}", b);
 			data = fs::read_to_string("/proc/acpi/button/lid/LID/state").expect("Unable to read file").trim().to_string();
 		} else {
-			println!("{:?}", b);
 			data = fs::read_to_string(&format!("/proc/acpi/button/lid/LID{}/state", i)).expect("Unable to read file").trim().to_string();
 		}
 
