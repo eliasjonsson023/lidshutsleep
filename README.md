@@ -1,6 +1,7 @@
 # lidshutsleep
 Polls the linux internals every 5 seconds to see if the laptop lid is closed. Makes system sleep if true.
-This makes sure the laptop will remain in sleep state and prevents the system from accidentally waking up when it is not supposed to.
+This makes sure the laptop will go back to sleep state and prevents the system from remaining active when it is not supposed to be active.
+
 This simple application was the answer to my linux laptop waking up in my backpack, making it hot and depleting the battery when it was not supposed to.
 
 
