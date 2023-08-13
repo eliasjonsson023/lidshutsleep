@@ -34,3 +34,4 @@ systemctl enable "lidshutsleep"
 systemctl start "lidshutsleep"
 
 echo "Service lidshutsleep installed and started successfully."
+echo "A reboot might be needded if lidshutsleep doesn't work yet."
